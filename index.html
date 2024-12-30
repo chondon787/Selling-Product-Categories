@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Selling Product Categories</title>
+	<!-- font awsome cdn -->
+	<script src="https://kit.fontawesome.com/d609285d95.js" crossorigin="anonymous"></script>
+	<!-- google font cdn -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<!-- tailwind and dasiy cdn -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						primary: 'rgb(139,195,74)',
+						secondary: 'rgb(17,17,17)',
+						body: 'rgb(248,246,243)',
+						accent: 'rgb(106,151,57)',
+						body_neutral: 'rgb(51,51,51)',
+					},
+					fontFamily: {
+						Poppins: 'Poppins',
+					},
+					Image: {
+						leaf: "./images/leaf01.png",
+					},
+					backgroundImage: {
+						leaf1: "url('./images/leaf01.png')",
+						call: "url('./images/call.jpg')",
+					},
+				},
+			},
+		}
+	</script>
+</head>
+
+<body class="font-Poppins">
+	<!-- header -->
+	<header class="w-11/12 mx-auto">
+		<nav class="">
+			<div class="navbar bg-base-100">
+				<div class="navbar-start">
+
+					<div>
+						<a href="#">
+							<img class="w-[80px] md:w-[100px] lg:w-[150px]" src="./images/logo.svg" alt="">
+
+						</a>
+					</div>
+				</div>
+				<div class="navbar-center hidden lg:flex">
+					<ul class="menu menu-horizontal px-1 font-bold text-lg hover:text-300">
+						<li class="hover:text-primary duration-300"><a>Home</a></li>
+						<li class="hover:text-primary duration-300"><a>Everything</a></li>
+						<li class="hover:text-primary duration-300"><a>Grocerise</a></li>
+						<li class="hover:text-primary duration-300"><a>About</a></li>
+						<li class="hover:text-primary duration-300"><a>Contact</a></li>
+
+
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<div class="flex space-x-3 text-lg">
+						<button>
+							<h4>$10.00</h4>
+						</button>
+						<button> <i class="fa-solid fa-cart-shopping"></i></button>
+						<button><i class="fa-regular fa-address-book"></i></button>
+					</div>
+				</div>
+				<!-- threedot -->
+				<div class="dropdown ">
+					<div tabindex="0 " role="button" class="btn btn-ghost lg:hidden">
+						<!-- three dot -->
+						<div class="text-lg"><i class="fa-solid fa-list"></i></div>
+					</div>
+					<ul tabindex="0"
+						class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow right-0">
+						<li class="hover:text-primary duration-300"><a>Home</a></li>
+						<li class="hover:text-primary duration-300 ease-in-out"><a>Everything</a></li>
+						<li class="hover:text-primary duration-300 ease-in-out"><a>Grocerise</a></li>
+						<li class="hover:text-primary duration-300 ease-in-out"><a>About</a></li>
+						<li class="hover:text-primary duration-300 ease-in-out"><a>Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- banner section -->
+		<section
+			class="  h-full   bg-leaf1 lg:bg-[length:500px_500px] bg-[length:200px_200px]    bg-no-repeat bg-right-bottom">
+			<div class=" w-full h-full bg-body opacity-90">
+				<div
+					class="lg:flex lg:flex-row md:flex-row flex-col items-center lg:py-32 md:py-20 py-14 gap-8 w-10/12 mx-auto">
+					<!-- img conttent -->
+					<div class="flex-1">
+						<img src="./images/bannerbg.png" alt="">
+					</div>
+					<!-- text-content -->
+					<div class="flex-1 mt-10 lg:text-left text-center lg:px-16">
+						<p class="font-bold ">Best Qualities Product</p>
+						<h1 class="text-5xl mt-4 font-bold my-4">Join the Organic Movement</h1>
+						<p>there are manry product in this company.the covered delevary by person.People likes the
+							companey all over the world.Because the system are deferents other</p>
+						<div class="flex lg:justify-start justify-center lg:py-0 py-4 ">
+							<button class=" bg-accent px-6 py-4 w-40 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white "> Shop Now
+								<i class="fa-solid fa-cart-shopping"></i> 
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</header>
+	<!-- main -->
+	<main class="w-11/12 mx-auto">
+		<!-- section1 -->
+		<div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-2 bg-slate-900 py-8 ">
+			<div class="flex flex-row gap-5 bg-slate-300 px-4 py-3 items-center  w-9/12 mx-auto  ">
+				<div><span><i class="fa-solid fa-shop"></i></span></div>
+				<div class="mt-3">
+					<p class="font-bold">Free Shoping</p>
+					<small class="text-lg">Above 10% only</small>
+
+				</div>
+			</div>
+			<div class="flex flex-row gap-5 bg-slate-300 px-4 py-3 items-center  w-9/12 mx-auto  ">
+				<div><span><i class="fa-solid fa-shop"></i></span></div>
+				<div class="mt-3">
+					<p class="font-bold">Certifed Organic</p>
+					<small class="text-lg">Above 100% </small>
+
+				</div>
+			</div>
+			<div class="flex flex-row gap-5 bg-slate-300 px-4 py-3 items-center  w-9/12 mx-auto  ">
+				<div><span><i class="fa-solid fa-shop"></i></span></div>
+				<div class="mt-3">
+					<p class="font-bold">Hug Seaving</p>
+					<small class="text-lg">At Lowest Price</small>
+
+				</div>
+			</div>
+			<div class="flex flex-row gap-5 bg-slate-300 px-4 py-3 items-center  w-9/12 mx-auto  ">
+				<div><span><i class="fa-solid fa-shop"></i></span></div>
+				<div class="mt-3">
+					<p class="font-bold">Festival Commition</p>
+					<small class="text-lg">Above 40% only</small>
+
+				</div>
+			</div>
+
+		</div>
+		<!-- ssecton2 -->
+		<section>
+			<div class="flex lg:flex-row flex-col items-center gap-10">
+				<!-- text content  -->
+				<div class="flex-1 space-y-4 lg:mt-0 md:mt-6 lg:mx-0 mx-4 mt-8 ">
+					<small>About Us</small>
+					<h1 class="font-bold text-3xl">
+						The website visitor tell us how and whey they should choose our Bussiness.
+					</h1>
+					<p>
+						Our premium products, including oil, ghee, honey, amla, and haritaki, are perfect for
+						health-conscious individuals who value natural and organic options. Experience a healthier
+						lifestyle with our carefully curated natural products, designed to boost your immunity and
+						overall well-being. Amla and haritaki are packed with nutrients that strengthen digestion and
+						enhance immunity, while our pure ghee is an essential addition to your diet, offering both
+						flavor and nutrition. Honey serves as a natural sweetener and energy booster, making it a great
+						addition to your daily routine.
+					</p>
+					<button class=" bg-accent px-6 py-4 w-48 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white "><i class="fa-solid fa-cart-shopping"></i>  Find Out More
+						
+				</div>
+				<!-- img content  -->
+				<div class="flex-1"><img src="./images/about.jpg" alt=""></div>
+			</div>
+		</section>
+		<!-- section3 -->
+		<section>
+			<div class="hero  bg-call">
+				<div class="hero-overlay bg-opacity-60"></div>
+				<div class="hero-content text-neutral-content text-center py-8">
+					<div class="max-w-md">
+						<h1 class="mb-5 text-3xl font-bold">Insert A Call To Action</h1>
+						<p class="mb-5">
+							Think of what you went to visitors to do next maybe they should contact you?
+						</p>
+						<button class="btn btn-primary">Get Started</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section4 -->
+		<section class="bg-body  py-10 ">
+			<div class="lg:py-16 sm:py-8 py-4 ">
+				<h1 class="text-4xl font-bold text-center">Best Selling Product</h1>
+			</div>
+			<!-- cart part -->
+			<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 lg:px-0 px-4">
+				<div class="card bg-base-100 w-full shadow rounded-md">
+					<figure class="px-10 pt-10">
+						<img src="./images/product01.jpg" alt="">
+					</figure>
+					<div class="card-body items-center text-center">
+						<small>Grocerise</small>
+						<h2 class="card-title">Assorted Coffee</h2>
+						<p class="text-yellow-400">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</p>
+						<p>$45.00</p>
+						<div class="card-actions">
+							<button class=" bg-accent px-6 py-4 w-40 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white ">
+								<i class="fa-solid fa-cart-shopping"></i> 
+							   <p>Shop Now</p>
+						   </button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 w-full shadow rounded-md">
+					<figure class="px-10 pt-10">
+						<img src="./images/product02.jpg" alt="">
+					</figure>
+					<div class="card-body items-center text-center">
+						<small> Oil</small>
+						<h2 class="card-title">Coconut oil</h2>
+						<p class="text-yellow-400">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							 
+						</p>
+						<p>$99.00</p>
+						<div class="card-actions">
+							<button class=" bg-accent px-6 py-4 w-40 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white ">
+								<i class="fa-solid fa-cart-shopping"></i> 
+							   <p>Shop Now</p>
+						   </button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 w-full shadow rounded-md">
+					<figure class="px-10 pt-10">
+						<img src="./images/product03.jpg" alt="">
+					</figure>
+					<div class="card-body items-center text-center">
+						<small>Coffee</small>
+						<h2 class="card-title">Ariz Drink</h2>
+						<p class="text-yellow-400">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</p>
+						<p>$149.00</p>
+						<div class="card-actions">
+							<button class=" bg-accent px-6 py-4 w-40 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white ">
+								<i class="fa-solid fa-cart-shopping"></i> 
+							   <p>Shop Now</p>
+						   </button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 w-full shadow rounded-md">
+					<figure class="px-10 pt-10">
+						<img src="./images/product04.jpg" alt="">
+					</figure>
+					<div class="card-body items-center text-center">
+						<small>Ayonik</small>
+						<h2 class="card-title">Healhy Ayon</h2>
+						<p class="text-yellow-400">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</p>
+						<p>$110.00</p>
+						<div class="card-actions">
+							<button class=" bg-accent px-6 py-4 w-40 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white ">
+								<i class="fa-solid fa-cart-shopping"></i> 
+							   <p>Shop Now</p>
+						   </button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 w-full shadow rounded-md">
+					<figure class="px-10 pt-10">
+						<img src="./images/product05.jpg" alt="">
+					</figure>
+					<div class="card-body items-center text-center">
+						<small> Pepper</small>
+						<h2 class="card-title">Hot pepper</h2>
+						<p class="text-yellow-400">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</p>
+						<p>$45.00</p>
+						<div class="card-actions">
+							<button class=" bg-accent px-6 py-4 w-40 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white ">
+								<i class="fa-solid fa-cart-shopping"></i> 
+							   <p>Shop Now</p>
+						   </button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 w-full shadow rounded-md">
+					<figure class="px-10 pt-10">
+						<img src="./images/product06.jpg" alt="">
+					</figure>
+					<div class="card-body items-center text-center">
+						<small>Uniliver</small>
+						<h2 class="card-title">Hand Washes</h2>
+						<p class="text-yellow-400">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</p>
+						<p>$70.00</p>
+						<div class="card-actions">
+							<button class=" bg-accent px-6 py-4 w-40 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white ">
+								<i class="fa-solid fa-cart-shopping"></i> 
+							   <p>Shop Now</p>
+						   </button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 w-full shadow rounded-md">
+					<figure class="px-10 pt-10">
+						<img src="./images/product07.jpg" alt="">
+					</figure>
+					<div class="card-body items-center text-center">
+						<small>Uniliver</small>
+						<h2 class="card-title">Fragrance</h2>
+						<p class="text-yellow-400">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</p>
+						<p>$149.00</p>
+						<div class="card-actions">
+							<button class=" bg-accent px-6 py-4 w-40 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white ">
+								<i class="fa-solid fa-cart-shopping"></i> 
+							   <p>Shop Now</p>
+						   </button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-base-100 w-full shadow rounded-md">
+					<figure class="px-10 pt-10">
+						<img src="./images/product08.jpg" alt="">
+					</figure>
+					<div class="card-body items-center text-center">
+						<small>Grocerise</small>
+						<h2 class="card-title">Mix Vitamins</h2>
+						<p class="text-yellow-400">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</p>
+						<p>$100.00</p>
+						<div class="card-actions">
+							<button class=" bg-accent px-6 py-4 w-40 rounded-lg flex flex-row items-center gap-2 mt-2 hover:bg-primary text-white ">
+								<i class="fa-solid fa-cart-shopping"></i> 
+							   <p>Shop Now</p>
+						   </button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section5 -->
+		 <section class="flex lg:flex-row flex-col flex-wrap items-center py-10  ">
+			<h4 class="font-semibold text-2xl">Featuared Branch:</h4>
+			<div class="flex lg:flex-row lg:flex-nowrap flex-wrap  justify-center items-center  ">
+				<img src="./images/logo-1.svg" alt="">
+				<img src="./images/logo-2.svg" alt="">
+				<img src="./images/logo-3.svg" alt="">
+				<img src="./images/logo-4.svg" alt="">
+				<img src="./images/logo-5.svg" alt="">
+			</div>
+		 </section>
+	</main>
+	<!-- footer -->
+	<footer class="bg-secondary text-white p-6">
+		<div class="flex flex-col items-center text-center gap-y-6 max-w-md mx-auto">
+		  
+		  <aside>
+			<img src="./images/logo-white.png" alt="Logo" class="mb-4">
+			<p>
+			  ACME Industries Ltd.<br />
+			  Providing reliable tech since 1992
+			</p>
+		  </aside>
+		  
+		  <nav>
+			<h6 class="footer-title font-bold mb-2">Services</h6>
+			<ul class="space-y-1">
+			  <li><a class="link link-hover">Branding</a></li>
+			  <li><a class="link link-hover">Design</a></li>
+			  <li><a class="link link-hover">Marketing</a></li>
+			  <li><a class="link link-hover">Advertisement</a></li>
+			</ul>
+		  </nav>
+		 
+		  <nav>
+			<h6 class="footer-title font-bold mb-2">Company</h6>
+			<ul class="space-y-1">
+			  <li><a class="link link-hover">About us</a></li>
+			  <li><a class="link link-hover">Contact</a></li>
+			  <li><a class="link link-hover">Jobs</a></li>
+			  <li><a class="link link-hover">Press kit</a></li>
+			</ul>
+		  </nav>
+		  
+		  <nav>
+			<h6 class="footer-title font-bold mb-2">Legal</h6>
+			<ul class="space-y-1">
+			  <li><a class="link link-hover">Terms of use</a></li>
+			  <li><a class="link link-hover">Privacy policy</a></li>
+			  <li><a class="link link-hover">Cookie policy</a></li>
+			</ul>
+		  </nav>
+		</div>
+	  </footer>
+	  
+</body>
+
+</html>
